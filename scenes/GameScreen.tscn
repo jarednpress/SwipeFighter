@@ -10,8 +10,6 @@ offset_left = 438.0
 offset_top = 407.0
 offset_right = 738.0
 offset_bottom = 707.0
-
-[node name="GameScreen" type="Node2D" parent="."]
 script = ExtResource("1_tiflb")
 
 [node name="GridContainer" type="GridContainer" parent="."]
