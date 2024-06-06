@@ -17,9 +17,16 @@ config/icon="res://icon.svg"
 
 [display]
 
-window/size/viewport_width=1170
-window/size/viewport_height=2532
+window/size/viewport_width=393
+window/size/viewport_height=852
+window/stretch/mode="viewport"
 window/handheld/orientation=1
+
+[layer_names]
+
+2d_physics/layer_1="Player"
+2d_physics/layer_2="Walls"
+2d_physics/layer_3="Platform"
 
 [rendering]
 

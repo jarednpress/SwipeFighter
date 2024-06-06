@@ -1,72 +1,88 @@
-[gd_scene load_steps=2 format=3 uid="uid://bv3dpw7qqe5tt"]
+[gd_scene load_steps=4 format=3 uid="uid://bv3dpw7qqe5tt"]
 
 [ext_resource type="Script" path="res://scripts/GameScreen.gd" id="1_tiflb"]
+[ext_resource type="Texture2D" uid="uid://i370ifq8hya0" path="res://assets/notch.png" id="2_bthhe"]
+[ext_resource type="Texture2D" uid="uid://c84rv0543wsjp" path="res://assets/ArenaTest.png" id="3_lge0i"]
 
 [node name="Control" type="Control"]
 custom_minimum_size = Vector2(300, 300)
 layout_mode = 3
 anchors_preset = 0
-offset_left = 438.0
-offset_top = 407.0
-offset_right = 738.0
-offset_bottom = 707.0
+offset_left = 82.0
+offset_top = 537.0
+offset_right = 416.0
+offset_bottom = 837.0
 script = ExtResource("1_tiflb")
 
 [node name="GridContainer" type="GridContainer" parent="."]
-custom_minimum_size = Vector2(300, 300)
+custom_minimum_size = Vector2(150, 150)
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 4.0
+offset_top = 28.0
+offset_right = 252.0
+offset_bottom = 276.0
 columns = 3
 
 [node name="Dot1" type="Button" parent="GridContainer"]
-custom_minimum_size = Vector2(20, 20)
+custom_minimum_size = Vector2(70, 70)
 layout_mode = 2
-text = "1"
+text = "○"
 
 [node name="Dot2" type="Button" parent="GridContainer"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(70, 70)
 layout_mode = 2
-text = "2"
+text = "○"
 
 [node name="Dot3" type="Button" parent="GridContainer"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(70, 70)
 layout_mode = 2
-text = "3"
+text = "○"
 
 [node name="Dot4" type="Button" parent="GridContainer"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(70, 70)
 layout_mode = 2
-text = "4"
+text = "○"
 
 [node name="Dot5" type="Button" parent="GridContainer"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(70, 70)
 layout_mode = 2
-text = "5"
+text = "○"
 
 [node name="Dot6" type="Button" parent="GridContainer"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(70, 70)
 layout_mode = 2
-text = "6"
+text = "○"
 
 [node name="Dot7" type="Button" parent="GridContainer"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(70, 70)
 layout_mode = 2
-text = "7"
+text = "○"
 
 [node name="Dot8" type="Button" parent="GridContainer"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(70, 70)
 layout_mode = 2
-text = "8"
+text = "○"
 
 [node name="Dot9" type="Button" parent="GridContainer"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(70, 70)
 layout_mode = 2
-text = "9"
+text = "○"
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_left = 135.0
-offset_top = -148.0
-offset_right = 185.0
-offset_bottom = -125.0
+offset_left = 7.0
+offset_top = -108.0
+offset_right = 57.0
+offset_bottom = -66.0
+theme_override_font_sizes/font_size = 30
+
+[node name="Notch" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(114.5, -111)
+scale = Vector2(0.885135, 0.8875)
+texture = ExtResource("2_bthhe")
+
+[node name="ArenaTest" type="Sprite2D" parent="."]
+z_index = -4
+position = Vector2(114, -111)
+texture = ExtResource("3_lge0i")
