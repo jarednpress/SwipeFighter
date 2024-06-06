@@ -21,6 +21,7 @@ window/size/viewport_width=393
 window/size/viewport_height=852
 window/stretch/mode="viewport"
 window/handheld/orientation=1
+window/layer_3="Platform"
 
 [layer_names]
 

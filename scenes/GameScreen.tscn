@@ -1,8 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://bv3dpw7qqe5tt"]
+[gd_scene load_steps=6 format=3 uid="uid://bv3dpw7qqe5tt"]
 
 [ext_resource type="Script" path="res://scripts/GameScreen.gd" id="1_tiflb"]
 [ext_resource type="Texture2D" uid="uid://i370ifq8hya0" path="res://assets/notch.png" id="2_bthhe"]
-[ext_resource type="Texture2D" uid="uid://c84rv0543wsjp" path="res://assets/ArenaTest.png" id="3_lge0i"]
+[ext_resource type="Texture2D" uid="uid://c84rv0543wsjp" path="res://assets/ArenaTest.png" id="3_e56w1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kx6ln"]
+size = Vector2(18, 484.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bga5g"]
+size = Vector2(601, 24)
 
 [node name="Control" type="Control"]
 custom_minimum_size = Vector2(300, 300)
@@ -85,4 +91,44 @@ texture = ExtResource("2_bthhe")
 [node name="ArenaTest" type="Sprite2D" parent="."]
 z_index = -4
 position = Vector2(114, -111)
-texture = ExtResource("3_lge0i")
+texture = ExtResource("3_e56w1")
+
+[node name="LeftWall" type="StaticBody2D" parent="."]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftWall"]
+position = Vector2(-177, -292.5)
+shape = SubResource("RectangleShape2D_kx6ln")
+
+[node name="RightWall" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RightWall"]
+position = Vector2(412, -295.25)
+shape = SubResource("RectangleShape2D_kx6ln")
+
+[node name="Platform" type="StaticBody2D" parent="."]
+collision_layer = 5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform"]
+position = Vector2(113.5, -41)
+shape = SubResource("RectangleShape2D_bga5g")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+offset = Vector2(104, 0)
+limit_left = -104
+limit_top = 0
+limit_right = 496
+limit_bottom = 852
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+drag_top_margin = 0.0
+drag_bottom_margin = 0.0
+editor_draw_limits = true
+editor_draw_drag_margin = true
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = -3.0
+offset_top = -243.0
+offset_right = 50.0
+offset_bottom = -55.0
