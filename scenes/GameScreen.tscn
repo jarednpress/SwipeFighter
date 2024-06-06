@@ -20,37 +20,53 @@ offset_bottom = 40.0
 columns = 3
 
 [node name="Dot1" type="Button" parent="GridContainer"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(20, 20)
 layout_mode = 2
+text = "1"
 
 [node name="Dot2" type="Button" parent="GridContainer"]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
+text = "2"
 
 [node name="Dot3" type="Button" parent="GridContainer"]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
+text = "3"
 
 [node name="Dot4" type="Button" parent="GridContainer"]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
+text = "4"
 
 [node name="Dot5" type="Button" parent="GridContainer"]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
+text = "5"
 
 [node name="Dot6" type="Button" parent="GridContainer"]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
+text = "6"
 
 [node name="Dot7" type="Button" parent="GridContainer"]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
+text = "7"
 
 [node name="Dot8" type="Button" parent="GridContainer"]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
+text = "8"
 
 [node name="Dot9" type="Button" parent="GridContainer"]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
+text = "9"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 135.0
+offset_top = -148.0
+offset_right = 185.0
+offset_bottom = -125.0
